@@ -1,0 +1,44 @@
+﻿@model EntityLayer.Entities.Adress
+@{
+    ViewData["Title"] = "EditAddress";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3>Adres Güncelleme</h3>
+
+<form method="post">
+   <table class="table table-bordered">
+      <input type="hidden" asp-for="AdressID" />
+      <tbody>
+         <tr>
+            <span asp-validation-for="Description1" class="text-danger"></span>
+            <th scope="row">@Html.Label("Açıklama-1")</th>
+            <td><input type="text" asp-for="Description1" class="form-control" /></td>
+         </tr>
+         <tr>
+            <span asp-validation-for="Description2" class="text-danger"></span>
+            <th scope="row">@Html.Label("Açıklama-2")</th>
+            <td><input type="text" asp-for="Description2" class="form-control" /></td>
+         </tr>
+         <tr>
+            <span asp-validation-for="Description3" class="text-danger"></span>
+            <th scope="row">@Html.Label("Açıklama-3")</th>
+            <td><input type="text" asp-for="Description3" class="form-control" /></td>
+         </tr>
+         <tr>
+            <span asp-validation-for="Description4" class="text-danger"></span>
+            <th scope="row">@Html.Label("Açıklama-4")</th>
+            <td><input type="text" asp-for="Description4" class="form-control" /></td>
+         </tr>
+         <tr>
+            <span asp-validation-for="Mapinfo" class="text-danger"></span>
+            <th scope="row">@Html.Label("Harita Bilgisi")</th>
+            <td><input type="text" asp-for="Mapinfo" class="form-control" /></td>
+         </tr>
+        
+
+      </tbody>
+   </table>
+   <button class=" btn btn-info w-100">Güncelle</button>
+
+</form>

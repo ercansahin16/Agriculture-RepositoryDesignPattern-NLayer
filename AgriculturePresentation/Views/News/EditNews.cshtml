@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Entities.News
+@{
+    ViewData["Title"] = "EditNews";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+<h3>Duyuru Güncelleme</h3>
+
+<form method="post">
+   @Html.HiddenFor(x => x.NewsID)
+   <div class=" form-group">
+      @Html.Label("Başlık");
+      <input type="text" asp-for="Title" class="form-control" />
+   </div>
+   <div class=" form-group">
+      @Html.Label("İçerik");
+<textarea asp-for="Description" class="form-control"></textarea>
+
+   </div>
+   <div class=" form-group">
+      @Html.Label("Tarih");
+      <input type="text" asp-for="Date" class="form-control" />
+   </div>
+  
+   <button class=" btn btn-info w-100 my-3">Değişiklikleri Kaydet</button>
+</form>

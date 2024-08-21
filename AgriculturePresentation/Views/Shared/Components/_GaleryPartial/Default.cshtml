@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Entities
+@model List<Image>
+
+<div class="gallery" id="gallery">
+   <div class="container">
+      <h3 class="tittle">Galerİ</h3>
+      <p class="heading-btm-w3ls">Tarım galerisi, tarımsal üretim süreçlerini, ürün çeşitliliğini ve tarıma dayalı yaşamı görsel olarak sergileyen bir platform sunar.</p>
+      <div class="agile_gallery_grids w3-agile">
+         <ul class="clearfix demo">
+
+            @foreach (var item in Model)
+            {
+               <li>
+                  <div class="gallery-grid1">
+                     <img src="@item.ImageUrl" style=" width:350px;height:180px;border-radius:10px" alt=" " class="img-responsive" />
+                     <div class="p-mask">
+                        <h4>Hasat <span>Zamanı</span></h4>
+                        <p>@item.Title</p>
+                     </div>
+                  </div>
+               </li>
+            }
+          
+         </ul>
+      </div>
+   </div>
+</div>

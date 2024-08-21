@@ -1,0 +1,37 @@
+﻿@model EntityLayer.Entities.Contact
+
+@{
+    ViewData["Title"] = "DetailsMessage";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h1>Mesaj Ayrıntıları</h1>
+
+<form method="post">
+   <table class="table table-bordered">
+      <input type="hidden" asp-for="ContactID" />
+      <tbody>
+         <tr>
+            <th scope="row">@Html.Label("Adı Soyadı")</th>
+            <td><input type="text" asp-for="Name" class="form-control" /></td>
+         </tr>
+         <tr>
+            <th scope="row">@Html.Label("Mail Adresi")</th>
+            <td><input type="text" asp-for="Mail" class="form-control" /></td>
+         </tr>
+         <tr>
+            <th scope="row">@Html.Label("İçerik")</th>
+            <td><textarea typeof="text" asp-for="Message" class="form-control" cols="5" rows="20"></textarea></td>
+         </tr>
+         <tr>
+            <th scope="row">@Html.Label("Tarih")</th>
+            <td><input type="text" asp-for="Date" class="form-control" /></td>
+         </tr>
+       
+        
+
+      </tbody>
+   </table>
+  
+
+</form>

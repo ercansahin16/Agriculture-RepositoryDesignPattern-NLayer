@@ -1,0 +1,268 @@
+﻿@{
+   Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+   <!-- header -->
+   <div class="header">
+      <div class="container">
+         @await Component.InvokeAsync("_TopAddressPartial")
+
+         @await Component.InvokeAsync("_SocialMediaPartial")
+         <div class="clearfix"> </div>
+      </div>
+   </div>
+
+   <!-- //header -->
+   <!--Slider-->
+   @await Component.InvokeAsync("_NavbarPartial")
+
+   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+      <!-- Modal1 -->
+      <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4>Hasat Zamanı</h4>
+               <img src="~/web/images/banner1.jpg" alt=" " class="img-responsive">
+               <h5>ÇEVRE & SÜRDÜRÜLEBİLİRLİK</h5>
+               <p>Çevre ve sürdürülebilirlik, geleceğimizi güvence altına almanın temel taşlarıdır. Doğal kaynakları bilinçli ve dikkatli kullanmak, ekosistem dengesini koruyarak gelecek nesillere yaşanabilir bir dünya bırakmak için kritik öneme sahiptir. Sürdürülebilir tarım, enerji tasarrufu, geri dönüşüm ve yenilenebilir enerji gibi uygulamalar, çevreye olan olumsuz etkileri en aza indirirken, uzun vadede ekonomik ve sosyal faydalar sağlar. Toplum olarak, çevreye duyarlı davranışlar benimsemek ve sürdürülebilirlik ilkelerini hayatımıza entegre etmek, hem doğanın hem de insanlığın devamlılığı için hayati bir sorumluluktur.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- //Modal1 -->
+   <!--//Slider-->
+   <!--//Header-->
+   <!-- about -->
+   @await Component.InvokeAsync("_AboutPartial")
+  
+   <!-- //about-bottom -->
+   <!--sevices-->
+   @await Component.InvokeAsync("_ServicePartial")
+   <!--//sevices-->
+  
+   <!-- team -->
+   @await Component.InvokeAsync("_TeamPartial")
+
+   <!-- //team -->
+   <!--blog -->
+
+   @await Component.InvokeAsync("_NewsPartial")
+   <!-- //blog -->
+   <!-- Modal2 -->
+   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4>In Harvest</h4>
+               <img src="~/web/images/b1.jpg" alt=" " class="img-responsive">
+               <h5>FURTHER DEVELOPMENT IN AGRICULTURE GROWTH</h5>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- //Modal2 -->
+   <!-- Modal3 -->
+   <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4>In Harvest</h4>
+               <img src="~/web/images/b2.jpg" alt=" " class="img-responsive">
+               <h5>KEEPING ON ADVANCING THE AGRICULTURE INDUSTRY</h5>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- //Modal3 -->
+   <!-- Modal4 -->
+   <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4>In Harvest</h4>
+               <img src="~/web/images/b3.jpg" alt=" " class="img-responsive">
+               <h5>OUR FIRST STEPS ON THE MARKET AMONG AGRICULTURAL COMPANIES</h5>
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- //Modal4 -->
+   <!--/gallery-->
+   @await Component.InvokeAsync("_GaleryPartial")
+
+
+   <!--//gallery-->
+   <!--footer-->
+   <div class="contact-agile" id="contact">
+      <div class="container">
+
+         <h3 class="tittle">Bize Ulaşın</h3>
+         <p class="heading-btm-w3ls">Aşağıdaki adres bilgilerimizden bize ulaşın...</p>
+         <div class="col-md-3 contact-left">
+            <h4>Bizim Adresimiz</h4>
+            <p>Güneş sok, Yıldız cadde.</p>
+            <p>16100 Osmangazi -Bursa-Türkiye,</p>
+            <p>e@s.com</p>
+            <h4></h4>
+            <p>0534 016 85 78</p>
+
+         </div>
+         <div class="col-md-9 contact-middle">
+            <h2>Bize Yazın</h2>
+            <form action="#" method="post">
+               <div class="form-agileinfo">
+                  <p>Ad Soyad</p>
+                  <input type="text" name="your name" placeholder="" required="" />
+                  <p>Email</p>
+                  <input type="email" name="your email" placeholder="" required="" />
+               </div>
+               <div class="form-agileits-w3layouts">
+                  <p>Mesajınız</p>
+                  <textarea name="your message" placeholder="" required=""></textarea>
+                  <input type="submit" value="Gönder">
+               </div>
+               <div class="clearfix"></div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="map-w3ls">
+      
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164674.5818265969!2d32.70003751888773!3d39.92174899102029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e0!3m2!1str!2sus!4v1724089631945!5m2!1str!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+   </div>
+   @await Component.InvokeAsync("_SocialFooterPartial")
+ 
+   <div class="copy">
+      <p>© @DateTime.Now.ToString("dd.MM.yyyy") HasatZamanı . Tüm hakları saklıdır |  <a href="/Login/Index">AdminLogin</a> </p>
+   </div>
+   <!--/footer -->
+   <!-- js -->
+   <script type="text/javascript" src="~/web/js/jquery-2.1.4.min.js"></script>
+   <!--gallery-js -->
+   <script src="~/web/js/jquery.picEyes.js"></script>
+   <script>
+      $(function () {
+         //picturesEyes($('.demo li'));
+         $('.demo li').picEyes();
+      });
+   </script>
+   <!--//gallery-js -->
+   <!-- start-smoth-scrolling -->
+   <script type="text/javascript" src="~/web/js/move-top.js"></script>
+   <script type="text/javascript" src="~/web/js/easing.js"></script>
+   <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+         $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+         });
+      });
+   </script>
+   <!-- start-smoth-scrolling -->
+   <!--light-box-files -->
+   <script src="~/web/js/jquery.chocolat.js"></script>
+   <!--//light-box-files -->
+   <script type="text/javascript">
+      $(function () {
+         $('.gallery a').Chocolat();
+      });
+   </script>
+   <!-- //js -->
+   <script src="~/web/js/responsiveslides.min.js"></script>
+   <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+         // Slideshow 3
+         $("#slider3").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+               $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+               $('.events').append("<li>after event fired.</li>");
+            }
+         });
+
+      });
+   </script>
+
+
+   <!--search-bar-->
+   <script src="~/web/js/main.js"></script>
+   <!--//search-bar-->
+   <!--tabs-->
+   <script src="~/web/js/easy-responsive-tabs.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function (event) { // Callback function if tab is switched
+               var $tab = $(this);
+               var $info = $('#tabInfo');
+               var $name = $('span', $info);
+               $name.text($tab.text());
+               $info.show();
+            }
+         });
+         $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+         });
+      });
+   </script>
+   <!--//tabs-->
+   <!-- smooth scrolling -->
+   <script type="text/javascript">
+      $(document).ready(function () {
+         /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+         */
+         $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+   </script>
+
+
+   <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+   <!-- //smooth scrolling -->
+   <script type="text/javascript" src="~/web/js/bootstrap-3.1.1.min.js"></script>
+
+</body>
+</html>

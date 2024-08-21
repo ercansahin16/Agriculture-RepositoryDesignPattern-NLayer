@@ -1,0 +1,47 @@
+﻿@using EntityLayer.Entities
+@model List<News>
+@{
+   ViewData["Title"] = "Index";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3>Duyurular </h3>
+
+<table class="table table-bordered my-5 " >
+   <thead>
+      <tr>
+         <th>ID</th>
+         <th>Başlık</th>
+         <th>Görsel</th>
+         <th>Açıklama</th>
+         <th>Durum</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach (var item in Model)
+      {
+         <tr>
+            <td>@item.NewsID</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@Convert.ToDateTime(item.Date).ToString("dd.MM.yyyy")</td>
+            <td>@item.Status</td>
+            <td>
+              
+               <a href="/News/Status/@item.NewsID" class="btn @(item.Status ? "btn-danger":"btn-success" )"
+                 >@(item.Status ? "Pasif Yap" : "Aktif Yap")</a>
+            </td>
+
+            <td><a href="/News/EditNews/@item.NewsID" class=" btn btn-primary ">Güncelle</a></td>
+         </tr>
+
+
+      }
+
+
+
+
+   </tbody>
+</table>
+<a href="/News/InsertNews" class=" btn btn-info w-100">Yeni Duyuru Girişi</a>

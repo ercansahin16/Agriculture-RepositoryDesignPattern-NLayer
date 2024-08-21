@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Entities
+@model List<About>
+
+   @foreach (var item in Model)
+{
+   
+
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="tittle">Hakkımızda</h3>
+			<p class="heading-btm-w3ls">@item.AboutUs</p>
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					
+					
+				</ul>
+				<div class="resp-tabs-containeru">
+					<div class="tab">
+						<p class="para-w3-agileits">@item.AboutHistory</p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //about-bottom -->
+}

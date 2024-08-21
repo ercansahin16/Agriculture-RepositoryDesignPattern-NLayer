@@ -1,0 +1,40 @@
+﻿@model EntityLayer.Entities.Image
+@{
+    ViewData["Title"] = "AddImage";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3>Görsel Ekle</h3>
+<form method="post">
+
+
+
+
+   <table class="table table-bordered">
+      <thead>
+         <tr>
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <th scope="row">@Html.Label("Başlık") </th>
+            <th>
+               <input type="text" asp-for="Title"class="form-control" />
+            </th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <span asp-validation-for="Description" class="text-danger"></span>
+            <th scope="row">@Html.Label("Açıklama")</th>
+            <td><input type="text" asp-for="Description" class="form-control" /></td>
+         </tr>
+         <tr>
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            <th scope="row">@Html.Label("Resim URL Linki")</th>
+            <td><input type="text" asp-for="ImageUrl" class="form-control" /></td>
+         </tr>
+       
+      </tbody>
+   </table>
+   <button class=" btn btn-info w-100">Kaydet</button>
+
+
+   </form>

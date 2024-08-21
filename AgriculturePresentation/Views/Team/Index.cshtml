@@ -1,0 +1,58 @@
+﻿@using EntityLayer.Entities
+@model List<Team>
+@{
+   ViewData["Title"] = "Index";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3 class="card-title">Takım</h3>
+<div class="col-lg-12 grid-margin stretch-card">
+   <div class="card">
+      <div class="card-body">
+        
+        
+         <div class="table-responsive">
+            <table class="table table-striped">
+               <thead>
+                  <tr>
+
+                     <th>  </th>
+                     <th>ID</th>
+                     <th> Ad</th>
+                     <th> Görev </th>
+                     <th>   </th>
+                     <th>   </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  @{
+                     int count = 0;
+                  }
+                  @foreach(var item in Model)
+                  {
+                     count++;
+                     <tr>
+
+                        <td class="py-1"> <img src="@item.ImageUrl" alt="image" style="border-radius:20px;width:100px" />  </td>
+                        <td class="py-1">@item.TeamID </td>
+                        <td> @item.PersonName </td>
+                        <td> @item.Title </td>
+                        <td><a href="/Team/DeleteTeam/@item.TeamID" class=" btn btn-danger ">Sil</a></td>
+                        <td><a href="/Team/EditTeam/@item.TeamID" class=" btn btn-success ">Güncelle</a></td>
+                      
+                     </tr>
+                  }  
+                  @{
+                     if (count==0)
+                     {
+                     <td id="Dsp" colspan="6" style="display:table-cell; text-align:center">Hiç Personel yok</td>
+                        
+                     }
+                  }
+               </tbody>
+            </table>
+            <a asp-action="AddTeam" asp-controller="Team" class="btn btn-info w-100 my-3">Yeni İşe Alım Yap</a>
+         </div>
+      </div>
+   </div>
+</div>

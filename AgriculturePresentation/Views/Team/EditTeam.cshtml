@@ -1,0 +1,56 @@
+﻿@model EntityLayer.Entities.Team
+@{
+    ViewData["Title"] = "EditTeam";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+
+<h3>Yeni Takım Arkadaşı Bilgi Güncelleme</h3>
+
+<form method="post">
+   <table class="table table-bordered">
+      <input type="hidden" asp-for="TeamID"/>
+      <tbody>
+         <tr>
+            <span asp-validation-for="PersonName" class="text-danger"></span>
+            <th scope="row">@Html.Label("Adı Soyadı")</th>
+            <td><input type="text" asp-for="PersonName" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Görev")</th>
+            <td><input type="text" asp-for="Title" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Görsel Yolu")</th>
+            <td><input type="text" asp-for="ImageUrl" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Facebook")</th>
+            <td><input type="text" asp-for="FacebookUrl" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Instagram")</th>
+            <td><input type="text" asp-for="InstagramUrl" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Twitter")</th>
+            <td><input type="text" asp-for="TwitterUrl" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Web Sitesi")</th>
+            <td><input type="text" asp-for="WebsiteUrl" class="form-control" /></td>
+         </tr>
+
+      </tbody>
+   </table>
+   <button class=" btn btn-info w-100">Güncelle</button>
+
+</form>
+
+

@@ -1,0 +1,30 @@
+﻿@model EntityLayer.Entities.Admin
+@{
+    ViewData["Title"] = "InsertAdmin";
+    Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+
+<h3>Yeni Admin Girişi</h3>
+<hr />
+<form method="post">
+   <table class="table table-bordered">
+
+      <tbody>
+         <tr>
+       
+            <th scope="row">@Html.Label("Kullanıcı Adı")</th>
+            <td><input type="text" asp-for="UserName" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Şifre")</th>
+            <td>
+               <input asp-for="Password" class="form-control"></input>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <button class=" btn btn-info w-100">Kaydet</button>
+
+</form>

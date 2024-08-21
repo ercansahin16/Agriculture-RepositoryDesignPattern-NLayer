@@ -1,0 +1,161 @@
+﻿@{
+   ViewData["Title"] = "Istatistik";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<div class="row">
+   <div class="col-md-3">
+      <div class="card card-stats card-warning">
+         <div class="card-body ">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-users"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Ekip Sayısı</p>
+                     <h4 class="card-title">@ViewBag.cart</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats card-success">
+         <div class="card-body ">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-bar-chart"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Hizmet Sayısı</p>
+                     <h4 class="card-title">@ViewBag.service</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats card-danger">
+         <div class="card-body">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-newspaper-o"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Mesaj sayısı</p>
+                     <h4 class="card-title">@ViewBag.cantact</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats card-primary">
+         <div class="card-body ">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-check-circle"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Galerideki Resim Sayısı</p>
+                     <h4 class="card-title">@ViewBag.ImageTitle</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats">
+         <div class="card-body ">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center icon-warning">
+                     <i class="la la-pie-chart text-warning"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Admin Sayısı</p>
+                     <h4 class="card-title">@ViewBag.admincount</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats">
+         <div class="card-body ">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-bar-chart text-success"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Pasif duyuru sayısı</p>
+                     <h4 class="card-title">@ViewBag.newsfalse</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats">
+         <div class="card-body">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-times-circle-o text-danger"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Aktif duyuru sayısı</p>
+                     <h4 class="card-title">@ViewBag.newstrue</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-3">
+      <div class="card card-stats">
+         <div class="card-body">
+            <div class="row">
+               <div class="col-5">
+                  <div class="icon-big text-center">
+                     <i class="la la-heart-o text-primary"></i>
+                  </div>
+               </div>
+               <div class="col-7 d-flex align-items-center">
+                  <div class="numbers">
+                     <p class="card-category">Bugün</p>
+                     <h4 class="card-title">@ViewBag.date</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+

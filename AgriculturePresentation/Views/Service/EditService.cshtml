@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Entities.Service
+@{
+    ViewData["Title"] = "EditService";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3>Hizmet Güncelleme</h3>
+
+<form method="post">
+   @Html.HiddenFor(x=>x.ServiceID)
+   <div class=" form-group">
+      @Html.Label("Başlık");
+      <input type="text" asp-for="Title" class="form-control" />
+   </div>
+   <div class=" form-group">
+      @Html.Label("Görsel");
+      <input type="text" asp-for="İmage" class="form-control" />
+   </div>
+   <div class=" form-group">
+      @Html.Label("Açıklama");
+      <input type="text" asp-for="Description" class="form-control" />
+   </div>
+   <button class=" btn btn-info w-100 my-3">Değişiklikleri Kaydet</button>
+</form>

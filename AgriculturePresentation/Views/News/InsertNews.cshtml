@@ -1,0 +1,41 @@
+﻿@model EntityLayer.Entities.News
+@{
+    ViewData["Title"] = "InsertNews";
+   Layout = "~/Views/Shared/NewAdminLayout.cshtml";
+}
+
+<h3>Yeni Duyuru</h3>
+<hr />
+<form method="post">
+   <table class="table table-bordered">
+
+      <tbody>
+         <tr>
+           @*  <span asp-validation-for="PersonName" class="text-danger"></span> *@
+            <th scope="row">@Html.Label("Başlık")</th>
+            <td><input type="text" asp-for="Title" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("İçerik")</th>
+            <td>
+               <textarea asp-for="Description" class="form-control"></textarea>
+            </td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Tarih")</th>
+            <td><input type="text" asp-for="Date" class="form-control" /></td>
+         </tr>
+         <tr>
+
+            <th scope="row">@Html.Label("Durum")</th>
+            <td><input type="text" asp-for="Status" class="form-control" /></td>
+         </tr>
+       
+
+      </tbody>
+   </table>
+   <button class=" btn btn-info w-100">Kaydet</button>
+
+</form>
