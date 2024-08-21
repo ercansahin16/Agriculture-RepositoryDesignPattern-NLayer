@@ -35,4 +35,4 @@ Agriculture projesi, tarım sektöründe dijital dönüşüm sürecinde önemli 
 
 
 
-![Açıklayıcı Alt Metin](https://github.com/ercansahin16/Agriculture-RepositoryDesignPattern-NLayer/raw/main/GitFor/your-image.png)
+![Açıklayıcı Alt Metin](https://github.com/ercansahin16/Agriculture-RepositoryDesignPattern-NLayer/raw/main/GitFor/Screen (1).png)
